@@ -1,0 +1,63 @@
+package amust;
+	
+import javafx.application.Application;
+
+import javafx.application.Platform;
+import javafx.event.EventHandler;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
+import javafx.scene.image.Image;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.StackPane;
+import javafx.scene.layout.AnchorPane;
+
+
+public class Main extends Application {
+	
+	
+	
+	public Pane AmustMainPane, AmustLoginPane;
+	
+	
+	@Override
+	public void start(Stage AmustStage) {
+		try {
+			
+			
+			AmustMainPane = ( Pane)FXMLLoader.load(getClass().getResource("Amust.fxml"));
+			AmustLoginPane = ( Pane)FXMLLoader.load(getClass().getResource("Amust.fxml"));
+			
+			AmustMainPane.visibleProperty().bind(AmustLoginPane.visibleProperty().not());
+			
+			StackPane stackPane = new StackPane(AmustMainPane, AmustLoginPane);
+			AnchorPane root = new AnchorPane(stackPane);
+			Scene scene = new Scene(root);
+			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+			AmustStage.setScene(scene);
+			AmustStage.show();
+			
+		AmustStage.getIcons().add(new Image(getClass().getResourceAsStream("Amust.png")))	;
+			AmustStage.setResizable(false);
+			AmustStage.setTitle("Amust corp");
+			
+			AmustStage.setOnCloseRequest(new EventHandler<WindowEvent>() {
+				public void handle(WindowEvent arg0) {
+					Platform.exit();
+					System.exit(0);
+				}
+			});
+			
+			
+			
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void main(String[] args) {
+		launch(args);
+	}
+}

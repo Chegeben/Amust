@@ -1,0 +1,12 @@
+INDEX VERSION 1.131+H:\AMUST\.metadata\.plugins\org.eclipse.jdt.core
+2016334524.index
+1498937736.index
+1198456685.index
+1142767785.index
+1648518402.index
+3968941637.index
+3107751744.index
+3962170294.index
+115185364.index
+3999331328.index
+1367666455.index

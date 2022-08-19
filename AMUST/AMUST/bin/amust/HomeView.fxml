@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane layoutX="5.0" layoutY="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="569.0" prefWidth="805.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="amust.AmustLogin">
+   <children>
+      <AnchorPane layoutX="3.0" layoutY="-2.0" prefHeight="575.0" prefWidth="397.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="-8.0" AnchorPane.leftAnchor="-8.0" AnchorPane.rightAnchor="335.0" AnchorPane.topAnchor="-9.3">
+         <children>
+            <Label alignment="CENTER" layoutX="80.0" layoutY="24.0" prefHeight="17.0" prefWidth="196.0" text="SEND" underline="true">
+               <font>
+                  <Font name="Bauhaus 93" size="15.0" />
+               </font>
+            </Label>
+            <TextField layoutX="160.0" layoutY="68.0" prefHeight="25.0" prefWidth="216.0" />
+            <Label layoutX="22.0" layoutY="72.0" prefHeight="17.0" prefWidth="124.0" text="Receiver code">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Separator layoutX="41.0" layoutY="115.0" prefHeight="1.0" prefWidth="239.0" AnchorPane.bottomAnchor="443.29999999999995" AnchorPane.leftAnchor="-3.9" AnchorPane.rightAnchor="-3.66" AnchorPane.topAnchor="115.0" />
+            <Label layoutX="8.0" layoutY="127.0" prefHeight="3.0" prefWidth="104.0" text="choose file from:" textFill="WHITE" />
+            <ScrollPane layoutX="5.0" layoutY="122.0" prefHeight="440.0" prefWidth="449.0" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </AnchorPane>
+      <AnchorPane layoutX="400.0" layoutY="-5.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="397.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="-5.0" AnchorPane.leftAnchor="451.0" AnchorPane.rightAnchor="-5.0" AnchorPane.topAnchor="-9.3">
+         <children>
+            <Label alignment="CENTER" layoutX="81.0" layoutY="28.0" prefHeight="17.0" prefWidth="196.0" text="RECEIVER" underline="true">
+               <font>
+                  <Font name="Bauhaus 93" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="13.0" layoutY="67.0" prefHeight="17.0" prefWidth="88.0" text="Sender code" AnchorPane.bottomAnchor="473.19999999999993" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="231.89999999999998" AnchorPane.topAnchor="67.0">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <TextField layoutX="108.0" layoutY="63.0" prefHeight="25.0" prefWidth="216.0" AnchorPane.bottomAnchor="469.19999999999993" AnchorPane.leftAnchor="108.0" AnchorPane.rightAnchor="8.899999999999977" AnchorPane.topAnchor="63.0" />
+            <Label layoutX="11.0" layoutY="363.0" prefHeight="17.0" prefWidth="124.0" text="Incoming files:">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="18.0" layoutY="126.0" prefHeight="17.0" prefWidth="139.0" text="New files">
+               <font>
+                  <Font name="System Bold Italic" size="11.0" />
+               </font>
+            </Label>
+            <ScrollPane layoutX="4.0" layoutY="143.0" prefHeight="216.0" prefWidth="332.0" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</AnchorPane>

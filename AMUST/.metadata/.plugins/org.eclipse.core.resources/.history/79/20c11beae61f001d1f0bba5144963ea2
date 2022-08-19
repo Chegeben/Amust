@@ -1,0 +1,50 @@
+package amust;
+import javafx.application.Application;
+import javafx.application.Platform;
+import javafx.event.EventHandler;
+import javafx.fxml.FXMLLoader;
+import javafx.scene. Parent;
+import javafx.scene.Scene;
+import javafx.scene.image.Image;
+import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
+
+
+public class Ben extends Application {
+	
+	public void start(Stage Ben) {
+		
+		try {
+			Parent root = FXMLLoader.load(getClass().getResource("Amust.fxml"));
+			Scene scene = new Scene(root);
+			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+			Ben.setScene(scene);
+			Ben.getIcons().add(new Image(getClass().getResourceAsStream("Amust.png")));
+			Ben.setResizable(false);
+			Ben.setTitle("Amust Ben Test");
+			Ben.show();
+			Ben.setOnCloseRequest(new EventHandler<WindowEvent>() {
+				public void handle(WindowEvent arg0) {
+					Platform.exit();
+					System.exit(0);
+				}
+			});
+			
+			
+			
+			
+			
+			
+			
+		}catch(Exception moto) {
+			moto.printStackTrace();
+		}
+	}
+	
+	
+
+
+public static void main(String[] args) {
+	launch(args);
+}
+}
